@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#1a1a2e">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📞 Group Call"
+        android:textSize="32sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/roomIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Room ID (optional)"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🆕 Create Room"
+        android:background="#4CAF50"
+        android:textColor="#ffffff"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Join Room"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:padding="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Android folder (has its own .gitignore)
+android/.gradle/
+android/build/
+android/*/build/
+android/local.properties
+android/*.iml
+android/*.ipr
+android/*.iws
+android/.idea/
+android/captures/
+android/externalNativeBuild/
+android/.cxx/
+android/*.apk
+android/*.ap_
+android/*.aab
+android/*.keystore
+android/*.jks
+
+# Keep server config but ignore sensitive data
+!server.js
+!package.json

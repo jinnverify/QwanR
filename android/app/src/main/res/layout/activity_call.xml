@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Remote videos grid -->
+    <GridLayout
+        android:id="@+id/remoteVideosGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="8dp" />
+
+    <!-- Local video (picture-in-picture) -->
+    <FrameLayout
+        android:id="@+id/localVideoContainer"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="#33000000"
+        android:elevation="8dp">
+
+        <org.webrtc.SurfaceViewRenderer
+            android:id="@+id/localVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <!-- Room title -->
+    <TextView
+        android:id="@+id/roomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="#80000000"
+        android:padding="8dp" />
+
+    <!-- Control buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="#80000000">
+
+        <Button
+            android:id="@+id/muteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🎤 Mute"
+            android:background="#FF5722"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📷 Camera Off"
+            android:background="#FF5722"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/endBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📴 End Call"
+            android:background="#F44336"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</FrameLayout>
